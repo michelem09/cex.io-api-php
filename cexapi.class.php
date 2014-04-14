@@ -180,6 +180,22 @@ class cexapi {
 	    	"amount" => $amount,
 			"price" => $price), true, $couple);
 	}
+
+	/**
+	 * Returns overall hash rate in MH/s.
+	 * @return array JSON results
+	 */
+	public function hashrate() {
+		return $this->api_call('ghash.io/hashrate', array(), true);
+	}
+	
+	/**
+	 * Returns workers' hash rate and rejected shares.
+	 * @return array JSON results
+	 */
+	public function workers() {
+		return $this->api_call('ghash.io/workers', array(), true);
+	}
 }
 
 ?>

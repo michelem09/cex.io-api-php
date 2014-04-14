@@ -1,3 +1,6 @@
+###Fork by michelem09
+added Hash.io API methods hashrate/workers
+
 #Cex.io API
 PHP source files and examples for the Cex.io API.
 
@@ -62,6 +65,12 @@ cancel_order($order_id);
 
 // Place order of $ptype("buy"), for $amount(1), at $price(1), for $couple("GHS/BTC").
 place_order($ptype, $amount, $price, $couple);
+
+// Get Hashrates
+hashrate();
+
+// Get workers details
+workers();
 ```
  
 ##Examples:
